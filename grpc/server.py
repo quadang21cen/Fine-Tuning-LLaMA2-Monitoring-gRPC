@@ -16,10 +16,12 @@ class ModelService(model_pb2_grpc.ModelServiceServicer):
     def TrainModel(self, request, context):
         self.training_status = "prepare for training"
         # training
-
+        
+        
 
         # end
         return model_pb2.TrainResponse(message="training have started")
+    
 
 def serve():
     port = "50051"
