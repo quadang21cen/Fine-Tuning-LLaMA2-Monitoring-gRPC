@@ -1,4 +1,4 @@
-# Fine-Tuning-LLaMA2
+# before start please install docker
 
-
-python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. model.proto
+build: docker build -t dockerfile .
+run: docker run dockerfile
